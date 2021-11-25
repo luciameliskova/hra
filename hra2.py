@@ -33,12 +33,12 @@ def nacitaj_mapu():
 # a potvorky a v scene
 
 
-    for y in range (0, sirka):
+    for y in range (0, vyska):
         #ak sme ich oboch nasli, tak vybehni z cyklu
         if kac_found and duc_found:
             break;
 
-        for x in range(0, vyska):
+        for x in range(0, sirka):
             #ak na sucasnom policku sa ma nachadzat postavicka
             if mapa [y][x] == 'h':
                 #tak to prepiseme na volne policko a ulozime si poziciu a zmenime
@@ -85,7 +85,7 @@ def vytvor_platno(okno, sirka, vyska, mapa, cell_size, wall):
 
 #pohyb panacika pomocou sipok
 
-def panacikmove():
+def panacikmove(event):
 
     global kac_x
     global kac_y
