@@ -3,10 +3,12 @@ import threading
 import random
 import time
 
+#treba si dat wall.gif a textak.txt do jedneho foldru spolu s tymto
+
 ####################################
 
 def nacitaj_mapu():
-    txt = open("/Users/lucka/PycharmProjects/textak_uloha6/textak.txt")
+    txt = open("hra/textak.txt")
     sirka = int(txt.readline())
     vyska = int(txt.readline())
     mapa = []
@@ -66,7 +68,7 @@ sirka, vyska, mapa = nacitaj_mapu()
 #obrazok si musime odlozit v premennej, ktora prezije platno a preto
 #je globalna
 
-wall = tkinter.PhotoImage (file = "/Users/lucka/desktop/wall.gif" )
+wall = tkinter.PhotoImage (file = "hra/wall.gif" )
 
 #volame funkciu vytvor_platno tak, ze ju priradime do premennej
 #v zatvorke musia byt nazvy vsetkych premennych, ktore potrebujeme
