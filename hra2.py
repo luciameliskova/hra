@@ -164,7 +164,7 @@ kacka = platno.create_image (kac_x * cell_size + cell_size/2, \
                              kac_y * cell_size + cell_size/2, \
                              image = kacka_data)
 
-duc_data = tkinter.Photoimage (file = 'duch.gif')
+duc_data = tkinter.Photoimage (file = 'duc.gif')
 duc = platno.create_image (duc_x * cell_size + cell_size/2, \
                            duc_y * cell_size + cell_size/2, \
                            image = duc_data)
