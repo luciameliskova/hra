@@ -7,7 +7,7 @@ import time
 ####################################
 
 def nacitaj_mapu():
-    txt = open('/Users/lucka/Desktop/textak.txt')
+    txt = open('textak.txt')
     sirka = int(txt.readline())
     vyska = int(txt.readline())
     mapa = []
@@ -201,14 +201,14 @@ sirka, vyska, mapa, kac_x, kac_y = nacitaj_mapu()
 # obrazok si musime odlozit v premennej, ktora prezije platno a preto
 # je globalna
 
-wall = tkinter.PhotoImage(file="/Users/lucka/Desktop/wall.gif")
-duch = tkinter.PhotoImage(file='/Users/lucka/Desktop/duc.gif')
+wall = tkinter.PhotoImage(file="wall.gif")
+duch = tkinter.PhotoImage(file='duc.gif')
 
 platno = vytvor_platno(okno, sirka, vyska, mapa, cell_size, wall, duch)
 
 
 # nacitame data k obrazku a zobrazime ho na konk suradniciach
-kacka_data = tkinter.PhotoImage(file='/Users/lucka/Desktop/duck.gif')
+kacka_data = tkinter.PhotoImage(file='duck.gif')
 kacka = platno.create_image(kac_x * cell_size + cell_size / 2, \
                             kac_y * cell_size + cell_size / 2, \
                             image=kacka_data)
